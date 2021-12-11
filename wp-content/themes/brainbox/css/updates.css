@@ -1,0 +1,33 @@
+.menu-primario ul li.current_page_item a{
+    color: var(--cinza4);
+    border-bottom: 3px solid var(--amarelo1);
+}
+
+
+
+.pagi{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.pagi .wp-pagenavi{
+
+}
+.pagi .wp-pagenavi a,
+.pagi .wp-pagenavi span{
+  color: #bbb;
+  display: inline-block;
+}
+.pagi .wp-pagenavi span.current{
+  color: #000 !important;
+  background: var(--amarelo1);
+}
+.pagi .wp-pagenavi a:hover{
+  color: #000 !important;
+  background: var(--amarelo1);
+}
+
+
+.wp-block-image img {
+    height: auto;
+}

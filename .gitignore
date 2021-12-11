@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+wp-config.php
+wp-admin
+wp-includes
+wp-content/themes/twentytwentyone
+wp-content/languages
