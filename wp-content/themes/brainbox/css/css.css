@@ -82,9 +82,17 @@ body {
 
 
 /* classes para todas as páginas */
-
 .site-limit {
     position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.page-template-template-home .site-limit {
+    max-width: 100%;
+}
+
+.page-template-template-home #home-banner-superior {
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -769,22 +777,25 @@ body {
 /* sobre nós */
 
 #sobre-faixa-superior {
-    background-color: var(--cinza5);
+    /*background-color: var(--cinza5);*/
+    margin-top: 1rem;
 }
 
 #sobre-faixa-superior .container-xl {
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /*min-height: 450px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #sobre-faixa-superior .texto {
-    font-family: 'open_sanssemibold';
-    font-size: 34px;
-    line-height: 1.2;
+    /*font-family: 'open_sanssemibold', sans-serif;*/
+    /*font-size: 34px;*/
+    /*line-height: 1.2;*/
+    font-size: 20px !important;
+    padding: 0 20px;
 }
 
 .card-lideranca {
@@ -841,16 +852,21 @@ body {
 
 
 /* o que fazemos */
-
 #o-que-fazemos-faixa-superior {
-    background-color: var(--cinza5);
+    margin-top: 1rem;
+    /*background-color: var(--cinza5);*/
+}
+
+#o-que-fazemos-faixa-superior .texto {
+    font-size: 20px !important;
+    padding: 0 20px;
 }
 
 #o-que-fazemos-faixa-superior .container-xl {
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /*min-height: 450px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -950,6 +966,7 @@ body {
 #caseview-faixa-banner-superior img{
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 #caseview-faixa-linha-superior {
@@ -1122,6 +1139,58 @@ body {
 .contato-faixa-item a {
     color: black;
     font-weight: bolder;
+}
+
+#contact-form-box h2 {
+    font-size: 22px;
+    color: var(--amarelo1);
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#contact-form-box  p {
+    font-size: 20px;
+}
+
+#contact-form-box input[type="text"],
+#contact-form-box input[type="email"],
+#contact-form-box textarea{
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+#contact-form-box textarea{
+    width: 100%;
+    height: 100px;
+}
+
+#contact-form-box .campo-mensagem {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact-form-box input[type="submit"] {
+    border: none !important;
+    font-size: 24px;
+    font-weight: 300;
+    background: transparent;
+    color: black;
+}
+
+#contact-form-box input[type="submit"]::last-letter {
+    color: #F9B700;
+}
+
+#contact-form-box input[type="submit"]:hover {
+    color: #F9B700;
+}
+
+#contact-form-box .botao-enviar {
+    text-align: right;
 }
 
 

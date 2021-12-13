@@ -17,22 +17,22 @@ get_header();
 
 			<!-- faixa sobre nós -->
 			<div id="sobre-faixa-superior">
-					<div class="container-xl">
-							<div class="row align-items-center">
-									<div class="col-auto d-flex justify-content-center">
-											<p class="text-34pt titulo-area"><?php echo $title; ?></p>
-									</div>
-									<div class="col px-5">
-											<?php if( $text = get_field('md_so_text') ) { ?><p class="texto"><?php echo $text; ?></p><?php } ?>
-									</div>
-							</div>
-					</div>
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-34pt titulo-area"><?php echo $title; ?></p>
+                        </div>
+                        <div class="col-12">
+                            <?php if( $text = get_field('md_so_text') ) { ?><p class="texto text-20pt"><?php echo $text; ?></p><?php } ?>
+                        </div>
+                    </div>
+                </div>
 			</div>
 
 
 			<!-- Liderança -->
 			<?php if( have_rows('md_so_lids') ) { ?>
-			<div id="sobre-faixa-lideranca" class="mt-5">
+			<div id="sobre-faixa-lideranca" class="mt-2">
 					<div class="container-xl">
 							<?php if( $title = get_field('md_so_lid_title') ) { ?>
 							<div class="row">

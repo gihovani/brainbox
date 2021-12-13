@@ -511,8 +511,15 @@ function gp_register_taxonomy_for_object_type() {
 add_action( 'init', 'gp_register_taxonomy_for_object_type' );
 */
 
-
-
+add_action( 'pre_get_posts', 'case_tag_archive_query' );
+function case_tag_archive_query( $query ) {
+    if ( !is_admin() &&
+        isset($query->query_vars['case-tag']) &&
+        !empty($query->query_vars['case-tag'])) {
+        $query->query_vars['posts_per_page'] = -1;
+    }
+    return $query;
+}
 
 
 function change_logo_class( $html ) {
@@ -549,3 +556,4 @@ function template_redirections() {
 
 }
 add_action( 'template_redirect', 'template_redirections' );
+

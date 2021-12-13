@@ -11,16 +11,17 @@ get_header();
 
 
 			<div id="o-que-fazemos-faixa-superior">
-					<div class="container-xl">
-							<div class="row text-center">
-									<div class="col-12">
-											<p class="text-34pt"><b><?php echo strtoupper(get_the_title()); ?></b></p>
-									</div>
-									<div class="col-12 text-20pt">
-											<?php the_content(); ?>
-									</div>
-							</div>
-					</div>
+
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-34pt titulo-area"><?php echo strtoupper(get_the_title()); ?></p>
+                        </div>
+                        <div class="col-12 texto">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
+                </div>
 			</div>
 
 
