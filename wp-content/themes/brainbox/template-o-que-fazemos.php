@@ -31,7 +31,7 @@ get_header();
 							<div id="o-que-fazemos-faixa-servico-accordion" class="accordion-flush">
 								<?php $i=0; while( have_rows('md_of_servs') ) : the_row(); ?>
 									<div class="accordion-item">
-											<div class="accordion-header py-5 d-flex justify-content-between">
+											<div class="accordion-header py-4 d-flex justify-content-between">
 													<span class="titulo-area w-75"><?php echo get_sub_field('md_of_servs_title'); ?></span>
 													<button class="bg-transparent border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $i; ?>"></button>
 											</div>

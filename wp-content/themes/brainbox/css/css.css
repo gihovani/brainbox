@@ -871,6 +871,10 @@ body {
     padding-bottom: 20px;
 }
 
+#o-que-fazemos-faixa-superior .wp-block-columns {
+    margin-bottom: 0;
+}
+
 #o-que-fazemos-faixa-servico-accordion .accordion-header button {
     background: url(../images/icos/ico-less.png);
     width: 40px;
