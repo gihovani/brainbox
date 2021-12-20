@@ -84,12 +84,8 @@ body {
 /* classes para todas as páginas */
 .site-limit {
     position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
-.page-template-template-home .site-limit {
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .page-template-template-home #home-banner-superior {
